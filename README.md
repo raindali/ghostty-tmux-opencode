@@ -1,6 +1,7 @@
 # ghostty-tmux-opencode
 
 [![CI](https://github.com/raindali/ghostty-tmux-opencode/actions/workflows/ci.yml/badge.svg)](https://github.com/raindali/ghostty-tmux-opencode/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/raindali/ghostty-tmux-opencode)](https://github.com/raindali/ghostty-tmux-opencode/releases)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Platform: macOS](https://img.shields.io/badge/platform-macOS-lightgrey.svg)
 
