@@ -1,0 +1,5 @@
+# Ghostty: use the tmux wrapper for the first window.
+#
+# Replace /Users/you with your home directory (Ghostty expects an absolute
+# path here).
+initial-command = /Users/you/.config/ghostty/tmux-start.sh

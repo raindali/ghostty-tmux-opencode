@@ -1,0 +1,27 @@
+# tmux-resurrect + tmux-continuum
+#
+# Merge this block into ~/.tmux.conf. TPM must be initialized last.
+
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+
+# Restore the last saved environment when the tmux server starts.
+set -g @continuum-restore 'on'
+
+# Autosave interval in minutes.
+set -g @continuum-save-interval '15'
+
+# Capture pane contents (scrollback). Turn this off if you do not need the
+# previous screen contents after a reboot; it makes saves faster and smaller.
+set -g @resurrect-capture-pane-contents 'on'
+
+# Keep saves in a predictable location.
+set -g @resurrect-dir '~/.tmux/resurrect'
+
+# Restore opencode panes. The wrapper rewrites the saved command to
+# `opencode -s <session-id>` when the TUI plugin recorded an exact session.
+set -g @resurrect-processes 'opencode'
+
+# TPM must be initialized last.
+run '~/.tmux/plugins/tpm/tpm'

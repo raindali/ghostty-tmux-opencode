@@ -1,0 +1,64 @@
+name: Bug report
+description: Report a problem with the wrapper, plugin, or cleanup script.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please remove personal paths, hostnames, proxy settings, tokens, and
+        session IDs before posting logs.
+
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "e.g. 15.1"
+    validations:
+      required: true
+
+  - type: input
+    id: ghostty
+    attributes:
+      label: Ghostty version
+    validations:
+      required: true
+
+  - type: input
+    id: tmux
+    attributes:
+      label: tmux version
+      description: Output of `tmux -V`
+    validations:
+      required: true
+
+  - type: input
+    id: opencode
+    attributes:
+      label: opencode version
+      description: Output of `opencode --version`
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log lines
+      description: Remove personal paths and session IDs.
+      render: text
+    validations:
+      required: false
