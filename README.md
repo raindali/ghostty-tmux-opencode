@@ -1,5 +1,6 @@
 # ghostty-tmux-opencode
 
+[![CI](https://github.com/raindali/ghostty-tmux-opencode/actions/workflows/ci.yml/badge.svg)](https://github.com/raindali/ghostty-tmux-opencode/actions/workflows/ci.yml)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Platform: macOS](https://img.shields.io/badge/platform-macOS-lightgrey.svg)
 
@@ -107,7 +108,7 @@ docs/design.md                 Architecture and trade-offs
 ## Install
 
 ```bash
-git clone https://github.com/<your-username>/ghostty-tmux-opencode.git
+git clone https://github.com/raindali/ghostty-tmux-opencode.git
 cd ghostty-tmux-opencode
 ./install.sh
 ```
